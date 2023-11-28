@@ -1,0 +1,97 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    font-family: Arial, sans-serif;
+}
+
+#container {
+    width: 980px;
+    height: 2000px;
+    margin: 0 auto;
+    box-shadow: 0 0 1em #cccccc;
+    margin-top: 20px;
+}
+#navbar{
+    display: grid;
+    background-color: rgb(28, 28, 215);
+}
+
+/* NAV KIRI */
+.nav-kiri{
+    display: flex;
+    float: left;
+}
+
+.nav-kiri img{
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+    margin: 10px 10px 0px 40px;
+}
+
+/* Beranda */
+.beranda {
+   padding: 40px 20px 0px 30px;
+}
+.beranda a {
+    text-decoration: none;
+    color: white;
+}
+
+.beranda a i {
+    color: white;
+}
+
+/* riwayat */
+.riwayat {
+    padding: 40px 0px 0px 0px;
+}
+.riwayat a {
+    text-decoration: none;
+    color: white;
+}
+.riwayat a i {
+    color: white;
+}
+
+/* NAV KANAN */
+
+.nav-kanan{
+    float: right;
+    display: flex;
+}
+
+/* Search bar */
+.search{
+    padding: 45px 20px 0px 0px;
+    /* background-color: green; */
+}
+.search input{
+    padding: 3px;
+    border-radius: 10px;
+}
+.search button{
+    padding: 3px;
+    border-radius: 10px;
+}
+
+/* Login */
+.container-login{
+    padding: 35px 40px 15px 0px;
+}
+
+.login {
+    background-color: rgb(252, 252, 252);
+    padding: 15px;
+    border-radius: 50px;
+}
+
+.login a{
+    color: rgb(0, 0, 0);
+    position: relative;
+    display: inline-block;
+}
+
+
