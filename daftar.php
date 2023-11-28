@@ -1,6 +1,7 @@
 <?php
     $gambar = "gambar/digi.png";
     $css = "css/daftar.css";
+    $net = "gambar/netflix.jpeg";
 ?>
 
 <!DOCTYPE html>
@@ -13,7 +14,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 </head>
-<body>
+<body style="background-image: url('<?php echo $net;?>');">
     <div id="container">
         <div id="gambar">
             <img src="<?php echo $gambar?>" alt="logo">

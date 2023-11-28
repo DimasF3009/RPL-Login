@@ -1,5 +1,6 @@
 <?php
     $gambarPath = "gambar/digi.png";
+    $net = "gambar/netflix.jpeg"
 ?>
 <!DOCTYPE html>
 <html lang="en">

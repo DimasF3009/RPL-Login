@@ -1,6 +1,7 @@
 <?php
-    $css = "css/loginUser.css";
+    $cscUser= "css/loginUser.css";
     $gambar = "gambar/digi.png";
+    $net = "gambar/netflix.jpeg";
 ?>
 <?php
 session_start(); // Mulai sesi
@@ -47,26 +48,26 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form Login</title>
-    <link rel="stylesheet" href="<?php echo $css; ?>">
+    <link rel="stylesheet" href="<?php echo $cscUser; ?>">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 </head>
-<body>
-<div id="container">
+<body style="background-image: url('<?php echo $net;?>');">
+    <div id="container">
         <div id="gambar">
-            <img src="<?php echo $gambar; ?>" alt="logo">
+            <img src="<?php echo $gambar; ?>" alt="">
         </div>
 
         <div id="login">
             <h2>Masuk</h2>
-            <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
+            <form action="#" method="post">
                 <label for="email">Email</label><br>
                 <br>
                 <input type="email" name="email" placeholder="Email" required><br>
                 <br>
                 <label for="password">Password</label><br>
                 <br>
-                <input type="password" name="password" placeholder="Password" require><br>
+                <input type="password" name="password"  placeholder="Password"><br>
                 <br><br><br>
                 <input type="submit" value="Login">
             </form>
@@ -75,8 +76,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             </p>
         </div>
         <br><br><br><br>
-        <?php require('footer.php'); ?>
+        <?php require('footer.php')?>
     </div>
-    
+
 </body>
+</html>
 </html>
